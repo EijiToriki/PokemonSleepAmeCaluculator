@@ -1,0 +1,25 @@
+.footer {
+  background-color: var(--primary-dark);
+  padding: var(--space-lg) 0;
+  margin-top: auto;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 0.875rem;
+  margin-bottom: var(--space-sm);
+}
+
+.footer-disclaimer {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--gray-dark);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: var(--space-md) 0;
+  }
+}

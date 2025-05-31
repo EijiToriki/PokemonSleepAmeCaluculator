@@ -1,0 +1,55 @@
+.level-slider-container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.level-button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--primary-dark);
+  color: var(--black);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.level-button:hover {
+  background-color: var(--accent-light);
+}
+
+.level-button:disabled {
+  background-color: var(--gray-light);
+  color: var(--gray-medium);
+  cursor: not-allowed;
+}
+
+.slider-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.level-input {
+  width: 80px;
+}
+
+.level-input input {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .slider-wrapper {
+    gap: var(--space-sm);
+  }
+  
+  .level-input {
+    width: 60px;
+  }
+}

@@ -1,0 +1,33 @@
+.input-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.input-label {
+  width: 150px;
+  font-weight: 500;
+  padding-top: var(--space-xs);
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .input-row {
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+  
+  .input-label {
+    width: 100%;
+    margin-bottom: var(--space-xs);
+  }
+  
+  .radio-group {
+    gap: var(--space-sm);
+  }
+}
