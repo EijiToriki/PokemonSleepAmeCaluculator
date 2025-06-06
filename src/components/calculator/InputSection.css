@@ -8,6 +8,7 @@
 .input-row {
   display: flex;
   align-items: flex-start;
+  padding-left: var(--space-xl);
 }
 
 .input-label {
@@ -54,10 +55,19 @@
   flex: 1;
 }
 
+.input-section-title {
+  font-size: 1.10rem;
+  font-weight: 500;
+  padding-left: var(--space-md);
+  margin-top: var(--space-md);
+  color: var(--gray-dark);
+}
+
 @media (max-width: 768px) {
   .input-row {
     flex-direction: column;
     gap: var(--space-xs);
+    padding-left: var(--space-md);
   }
   
   .input-label {
@@ -67,5 +77,9 @@
   
   .radio-group {
     gap: var(--space-sm);
+  }
+  
+  .input-section-title {
+    padding-left: var(--space-sm);
   }
 }

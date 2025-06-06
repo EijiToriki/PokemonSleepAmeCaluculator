@@ -1,12 +1,13 @@
 .input-row {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .input-label {
   width: 150px;
   font-weight: 500;
   padding-top: var(--space-xs);
+  line-height: 1.5;
 }
 
 .radio-group {
@@ -14,6 +15,7 @@
   flex-wrap: wrap;
   gap: var(--space-md);
   flex: 1;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
